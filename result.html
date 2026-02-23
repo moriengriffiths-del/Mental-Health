@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Your Results – Mental Health Check‑In</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <main class="card">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">MH</div>
+          <div style="min-width:0">
+            <h1>Mental Health Check‑In</h1>
+            <small>Quick wellbeing survey</small>
+          </div>
+        </div>
+        <div class="pill" data-pill>Results</div>
+      </header>
+      <section class="content">
+
+        <h2>Your total score</h2>
+        <p>This is based on your 10 answers (1–5 points each).</p>
+
+        <div class="result">
+          <div class="big-score">
+            <div>
+              <div class="n" data-total>0</div>
+              <div class="of">out of 50</div>
+            </div>
+            <div class="badge" data-badge>—</div>
+          </div>
+
+          <div class="notice" id="support">
+            <span data-note>—</span>
+          </div>
+
+          <div class="notice" data-panel>
+            <!-- filled by JS -->
+          </div>
+        </div>
+
+        <h2 style="margin-top:16px">What your score means</h2>
+        <p>These brackets match your project sketch (with an extra top bracket so the scale completes):</p>
+        <ul class="resources">
+          <li><strong>10–20:</strong> Consider reaching out / talk to someone</li>
+          <li><strong>21–30:</strong> Re‑take the test in a week</li>
+          <li><strong>31–40:</strong> You’re chilling (generally okay)</li>
+          <li><strong>41–50:</strong> Thriving</li>
+        </ul>
+
+        <div class="actions">
+          <button class="btn primary" type="button" data-again>Take again</button>
+          <button class="btn" type="button" data-clear>Clear answers</button>
+        </div>
+      </section>
+      <footer class="footer">
+        This is a simple wellbeing check‑in, not a diagnosis. If you feel unsafe or at risk of harm, call <strong>999</strong> now.
+      </footer>
+    </main>
+  </div>
+
+  <div class="banner">
+    <div class="banner-inner">
+      <strong>Need help right now?</strong>
+      <a href="result.html#support">Support & contacts</a>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
